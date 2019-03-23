@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@rnhooks/async-storage": {
+      "signature": "0cdbc97f265b99a7aa4f479a4862508f",
+      "file": true
+    }
+  }
+}
