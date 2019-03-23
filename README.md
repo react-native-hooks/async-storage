@@ -3,7 +3,7 @@
 > React Native hook for AsyncStorage
 
 ```
-import useAsy from '@rnhooks/clipboard';
+import useAsyncStorage from '@rnhooks/async-storage';
 
 function App() {
   const [storageItem, updateStorageItem, clearStorageItem] = useAsyncStorage(
