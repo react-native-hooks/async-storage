@@ -4,10 +4,12 @@ import { AsyncStorage } from 'react-native';
 
 export default key => {
   const [storageItem, setStorageItem] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   async function getStorageItem() {
     const data = await AsyncStorage.getItem(key);
     setStorageItem(data);
+    setIsLoaded(true);
   }
 
   function updateStorageItem(data) {
@@ -27,5 +29,5 @@ export default key => {
     getStorageItem();
   }, []);
 
-  return [storageItem, updateStorageItem, clearStorageItem];
+  return [storageItem, updateStorageItem, clearStorageItem, isLoaded];
 };
